@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="YOU-mj-bSx" kind="relationship" relationship="viewControllers" id="NY6-ao-26F"/>
+                        <segue destination="fwT-SA-esr" kind="relationship" relationship="viewControllers" id="NY6-ao-26F"/>
                         <segue destination="0Bw-sH-Kcx" kind="relationship" relationship="viewControllers" id="Muc-ZQ-NvM"/>
                         <segue destination="tF7-YH-xY8" kind="relationship" relationship="viewControllers" id="nM4-pi-gd9"/>
                         <segue destination="ngD-2u-kVw" kind="relationship" relationship="viewControllers" id="uG5-eb-ueo"/>
@@ -59,6 +59,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ee-5S-HGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="238" y="1093"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="l2h-Bb-KBU">
+            <objects>
+                <navigationController id="fwT-SA-esr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="ap7-Ju-6d7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MEO-0f-Twb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d0h-8A-ezB" kind="relationship" relationship="rootViewController" id="YEI-fd-gWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGC-DW-DPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="-957"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Rm-dn-qG6">
+            <objects>
+                <viewController id="d0h-8A-ezB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PsB-DW-eZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gG-j9-tjh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uf7-Md-QpM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BqU-6F-oZX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIv-q5-qF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="-958"/>
         </scene>
         <!--关注-->
         <scene sceneID="8ZA-xm-B7v">
@@ -134,20 +170,12 @@
             </objects>
             <point key="canvasLocation" x="1249" y="-279"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="bit-rg-Xgj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="YOU-mj-bSx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9jU-NB-0Vz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pcb-AC-wXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="238" y="-957"/>
-        </scene>
     </scenes>
     <resources>
         <image name="btn_column_normal" width="24" height="24"/>
         <image name="btn_column_selected" width="24" height="24"/>
+        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
         <image name="btn_live_normal" width="30" height="24"/>
         <image name="btn_live_selected" width="30" height="24"/>
         <image name="btn_user_normal" width="24" height="24"/>
